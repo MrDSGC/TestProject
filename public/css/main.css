@@ -631,6 +631,7 @@ body {
   margin-left: 1rem; }
 
 .modal_content_container {
+  height: 477px;
   text-align: center; }
 
 .modal_image_view {
@@ -641,7 +642,12 @@ body {
 }
 
 .modal_image_description {
-  height:20px;
+  color: white;
+  position: absolute;
+  bottom: 52px;
+  background-color:rgba(0,0,0,0.3);
+  height:15%;
+  width: calc(100% - 46px);
   text-align: center; }
 
 ul {
