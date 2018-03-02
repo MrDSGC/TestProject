@@ -1,0 +1,125 @@
+.project-mini {
+  width: 22rem;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  border-radius: $border-radius-container;
+  border: $border-for-containers;
+  height: 50rem;
+  margin-top: 1rem;
+  transition: all .5s ease;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+    margin: 1rem 1rem;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: $box-shadow-params;
+    cursor: pointer;
+    z-index: 100000000;
+  }
+
+  &__image {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: $border-radius-container;
+    border-top-left-radius: $border-radius-container;
+    height: 15rem;
+  }
+
+  &__title {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    padding: 0 .5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 4.5rem;
+  }
+
+  &__description_text {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding: 0 .5rem;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    height: 5.5rem;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  &__tags_container {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    padding: .5rem;
+    height: 10rem;
+    overflow: hidden;
+    height: 10rem;
+  }
+
+  &__creators {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+    padding: .5rem;
+    height: 7.4rem;
+  }
+
+  &__vote {
+    grid-column: 1/-1;
+    grid-row: 6/7;
+    padding: .5rem;
+
+    display: flex;
+    align-items: center;
+    height: 5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
+  }
+}
+
+.username-photo-container {
+  display: flex;
+  align-items: center;
+}
+
+.mini-user-name {
+  font-size: $default-font-size;
+  margin: 0;
+  padding-left: .5rem;
+}
+
+.mini-user-name-sub-text {
+  font-size: 1rem;
+  color: lightGrey;
+  margin: 0;
+  padding-left: .7rem;
+  margin-top: -5px;
+}
+
+.mini-user-name-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-user-name-sub-text {
+  color: $color-grey-dark-1;
+}
+
+.mini-user-photo {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 4rem;
+}

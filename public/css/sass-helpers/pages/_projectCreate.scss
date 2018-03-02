@@ -1,0 +1,245 @@
+.project-logo-edit {
+  width: 20rem;
+  height: 20rem;
+  border-radius: $border-radius-container;
+
+}
+
+.project_collab_remove {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-button-container {
+  text-align: right;
+}
+
+.add-picture-icon {
+  font-size: 7.5rem !important;
+  cursor: pointer;
+}
+
+.add-picture-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.media-item-container {
+  position: relative;
+}
+
+.close-icon-color {
+  color: $color-grey-dark-3 !important;
+  font-weight: bold;
+}
+
+.remove-picture-div {
+  z-index: 10000;
+  position: absolute;
+  top: -1rem;
+  left: 9rem;
+  cursor: pointer;
+}
+
+.btn-mini {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1rem;
+
+    //Change for the <button> element
+    border: $border-for-containers;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0 .5rem 1rem $color-grey-dark-3;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem $color-grey-dark-3;
+  }
+}
+
+.btn-default {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: $default-font-size;
+
+    //Change for the <button> element
+    border: $border-for-containers;
+    cursor: pointer;
+  }
+
+  &__primary {
+    background-color: $color-primary-dark;
+    color: white;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem $color-grey-dark-3;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem $color-grey-dark-3;
+  }
+}
+
+.inputField {
+  height: 90%;
+  width: 90%;
+  font: $font-display;
+  font-size: $default-font-size;
+}
+
+.hero-image-container {
+  grid-column: 2/3;
+  text-align: left;
+  margin-left: 1rem;
+  height: 100%;
+
+  display: flex;
+  justify-content: start;
+}
+
+.cover-image-project-create {
+  object-fit: cover;
+  width: 100%;
+  height: 20rem;
+}
+
+.vertically-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-full-width {
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+  padding-bottom: 3rem;
+}
+
+.section-container {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  margin-top: 3rem;
+  width: 70%;
+  padding: 0.5rem 0.5rem;
+  transition: all 0.5s;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%; //1rem = 8px // 8 / 16 = 50.
+  }
+
+}
+
+.section-full-grid-width {
+  grid-column: 1/-1;
+}
+
+.section-border-padding {
+  border: $border-for-containers;
+  border-radius: $border-radius-container;
+}
+
+.section-item {
+  grid-column: 1/-1;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  grid-column: 1/-1;
+  color: #999;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.form-section {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  width: 70%;
+}
+
+.form-label {
+  grid-column: 1/2;
+  text-align: right;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-field {
+  grid-column: 2/3;
+  text-align: left;
+  margin-left: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.image-thumbnail {
+  height: 100px;
+  width: 100px;
+  margin: 0.5rem 0.5rem;
+  object-fit: cover;
+  border: $border-for-containers;
+  border-radius: $border-radius-container;
+}
+
+.thumbnail-height {
+  height: 100px;
+  vertical-align: middle;
+}
+
+.label-field-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.label-main {
+  font-size: $default-font-size;
+}

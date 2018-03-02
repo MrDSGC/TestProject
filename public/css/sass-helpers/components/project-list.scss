@@ -1,0 +1,84 @@
+.project-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $color-grey-light-4;
+  padding: 0 1.5rem;
+
+  &:hover {
+    background-color: $color-grey-light-3;
+  }
+
+  // left container
+  &--left-items-container {
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &--props {
+      @media only screen and (max-width: $bp-medium) {
+        order: 2;
+      }
+    }
+
+    &--thumbnail-title-container {
+      display: flex;
+      align-items: center;
+
+      @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &--thumbnail {
+        width: 8rem;
+        height: 6rem;
+        object-fit: cover;
+        margin: 5px;
+        border: $border-for-containers;
+      }
+    }
+  }
+
+  // right container
+  &--action-items-container {
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &--right-box {
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      &--users-tags {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-right: 5px;
+      }
+    }
+
+    &--right-box > * {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &--action-items-container > * {
+    @media only screen and (max-width: $bp-medium) {
+      margin: 5px 0px;
+    }
+  }
+
+}

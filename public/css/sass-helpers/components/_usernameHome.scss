@@ -1,0 +1,44 @@
+.username-photo-container-home {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: $default-font-size;
+
+  //Change for the <button> element
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem $color-grey-dark-3;
+  }
+
+  &__center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 3rem;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+    margin-left: 3px;
+  }
+
+  &__username {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: #FFFFFF;
+  }
+}

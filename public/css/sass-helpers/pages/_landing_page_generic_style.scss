@@ -1,0 +1,137 @@
+.landing-page-main-container {
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 5px;
+  }
+}
+
+.landing-page-full-width-container {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0,0,0,0.6);
+  position: relative;
+}
+
+.landing-page-page-header-container {
+  width: 100%
+}
+
+.landing-page-hack-hive-logo {
+  font-size: 8rem;
+  font-weight: 100;
+  color: #faf9f9;
+  margin-left: 1rem;
+}
+
+.landing-page-page-text {
+  color: $color-grey-light-4;
+  font-size: 8rem;
+}
+
+.landing-page-page-subtitle {
+  color: $color-grey-light-4;
+  font-size: 4rem;
+}
+
+// white text in the middle of the header section
+.landing-page-page-helper-text {
+  margin-top: 2rem;
+  color: $color-grey-light-4;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.landing-page-page-header-content {
+  margin-top: 2rem;
+}
+
+.landing-page-projects-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.landing-page-container-header {
+  margin-top: 2.0rem;
+  margin-bottom: 1.0rem;
+  height: 2.6rem;
+}
+
+.landing-page-indiv-project-container {
+  padding: 2rem;
+  margin: 0 5rem;
+  margin-top: 2.5rem;
+}
+
+.landing-page-add-projects-cta {
+  margin: auto auto;
+  align-content: center;
+  height: 30rem;
+  padding: 3rem 5rem;
+}
+
+.landing-page-3-tile-layout {
+  display: flex;
+  justify-content: space-between;
+
+  //800px and smaller
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.landing-page-tile-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 10px;
+  }
+}
+
+.item-icon-size {
+  font-size: 7rem !important;
+}
+
+.landing-page-centered-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.landing-page-tile-large {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  text-align: center;
+  padding: 2rem;
+  border: $border-for-containers;
+}
+
+.img-circle-upcoming {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 100rem;
+}
+
+.upcoming-header-text {
+  margin-top: 5px;
+  font-size: 2rem;
+}
+
+.upcoming-body-text {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}

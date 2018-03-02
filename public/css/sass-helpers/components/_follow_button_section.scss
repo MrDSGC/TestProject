@@ -1,0 +1,23 @@
+// UserFollowList Dialog
+
+.follow-user-list-content {
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.follow_user_text_count {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.follow_user_dialog_notice {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-size: 1rem;
+  width: 30%;
+  text-align: left;
+}

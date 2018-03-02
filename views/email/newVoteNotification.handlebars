@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; margin: 0; padding: 0;">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Helvetica Neue" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title></title>
+	<style>
+		body {
+			font-family: 'Helvetica Neue';
+		}
+
+		h2 {
+			margin-bottom: 4px;
+			color: #5E54A4;
+		}
+
+		a {
+			color: #84518D;
+		}
+
+		a:hover,
+		a:focus {
+			color: #5e54a4;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		.all-communities {
+			column-count: 3;
+		}
+		.value-prop {
+			margin-left: 12px;
+			margin-top: 24px;
+			margin-bottom: 24px;
+		}
+		.link {
+			color: #84518D;
+			font-weight: 500;
+		}
+
+		.btn {
+			font-weight: 600;
+			border-radius: 3px;
+			min-width: 80px;
+		}
+		.btn:focus {
+			outline: 0 !important;
+		}
+		.btn-primary {
+			background: #84518D;
+			border-color: #84518D;
+			color: #fff;
+		}
+		.btn-primary:hover,
+		.btn-primary:focus,
+		.btn-primary .focus,
+		.btn-primary .active {
+			color: #fff;
+			background: #5E54A4;
+			border-color: #5E54A4;
+			cursor: pointer;
+		}
+		.btn-secondary{
+			color: #5E54A4;
+			background: #fff;
+			border-color: #5E54A4;
+		}
+		.btn-secondary:hover,
+		.btn-secondary:focus,
+		.btn-secondary .focus,
+		.btn-secondary .active {
+			color: #84518D;
+			background: #fff;
+			border-color: #84518D;
+		}
+	</style>
+</head>
+<body >
+	<center>
+		<table style="max-width: 600px;">
+			<!-- Logo -->
+			<tr>
+				<td  style="text-align: center">
+					<a href="http://www.thehackhive.com">
+						<img style="height: 50px" src="http://www.thehackhive.com/assets/img/HackHiveAssets/hackHiveLogoSlim.png" />
+					</a>
+				</td>
+			</tr>
+    	<tr>
+        <td style="border-bottom: 5px solid #3D9DD7 ;">
+        </td>
+    	</tr>
+
+			<!-- BODY -->
+			<tr>
+				<td>
+					<div style="font-family: Helvetica Neue; font-weight: normal; font-size: 16px; line-height: 1.6; margin: 0 0 10px; padding: 0;">
+            <p><b>Hi {{userToEmail.firstName}},</b></p>
+						<p>
+              Congrats! Yay 🙌! You got another vote on: <b>{{project.title}}</b>! You're up to <b>{{project.voteCount}} votes</b>!
+						</p>
+            <br/>
+            <p>
+              Share your project with your friends to get more votes! Anyone can vote, they don't need to have an account on HackHive :)
+            </p>
+            <center>
+              <a href="{{projectUrl}}">
+                <h4>
+									{{projectUrl}}
+                </h4>
+              </a>
+
+              <p>
+                Checkout (and vote on) <a href="https://www.thehackhive.com/slohacks"> SLO Hack Projects here. </a>
+              </p>
+
+            </center>
+						<br/>
+						<p>
+          		I hope that you find HackHive useful. Please tell us how we can make it better :)
+						</p>
+						<p style="font-family: Helvetica Neue; font-weight: normal; font-size: 16px; line-height: 1.6; margin: 0 0 10px; padding: 0;">
+							Thank you so much!<br />
+							<b> Varun and the HackHive Team </b>
+              <br/>
+              	<a href="https://www.thehackhive.com/profile/vbhartia">
+                  Varun's Profile
+              </a>
+						</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</center>
+	<div style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; text-align: center; border-top-style: solid; border-top-width: 1px; border-top-color: #cccccc; color: #a9a9a9; font-size: 12px; margin: 10em 0 0; padding: 1em 0 0;" align="center">
+		<a href="http://www.thehackhive.com" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; color: #a9a9a9; text-decoration: none; margin: 0; padding: 0;">theHackHive.com</a>
+	</div>
+</body>
+</html>

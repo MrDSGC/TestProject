@@ -1,0 +1,56 @@
+.facebook-login-button {
+  max-height: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title-border {
+  padding-bottom: .5rem;
+  border-bottom: $border-for-containers;
+}
+
+.section-container-within-page {
+  padding: .5rem;
+  text-align: left;
+}
+
+.section-container-content {
+  margin-left: 1.5rem;
+}
+
+.or-border-text-container {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.sign-up-border-bottom {
+  width: 100%;
+  border: $border-for-containers;
+}
+
+.or-text {
+  margin: 0rem 1rem;
+  color: $color-grey-dark-3;
+  text-transform: uppercase;
+}
+
+.form-container-center {
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 1.5rem;
+    flex-direction: column;
+  }
+}
+
+.form-container-center > * {
+  text-align: right;
+
+  @media only screen and (max-width: $bp-medium) {
+    text-align: center;
+  }
+}

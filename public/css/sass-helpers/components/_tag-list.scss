@@ -1,0 +1,60 @@
+// used with tagList component
+.tag-list-container {
+cursor: default;
+
+  &-text-length {
+    white-space: nowrap;
+    margin: 0 5px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.tag-list-dropdown-container {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  z-index: 100000;
+  border: $border-for-containers;
+
+	animation-name: fadeInHeight;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .5s;
+  cursor: default;
+}
+
+@keyframes fadeInHeight {
+	0% {
+    max-height: 0%;
+	}
+	100% {
+    max-height: 100%;
+	}
+}
+
+.tag-list-dropdown-element {
+  color: black;
+  padding: 6px 0px;
+  text-decoration: none;
+  display: block;
+
+  animation-name: fadeInPosition;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .7s;;
+}
+
+@keyframes fadeInPosition {
+	0% {
+    opacity: 0;
+	}
+	100% {
+    opacity: 1;
+	}
+}

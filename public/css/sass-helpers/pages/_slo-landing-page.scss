@@ -1,0 +1,64 @@
+.slo-main-container {
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+.slo-full-width-container {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0,0,0,0.6);
+  position: relative;
+}
+
+.slo-page-header-container {
+  width: 100%
+}
+
+.slo-page-text {
+  color: $color-grey-light-4;
+  font-size: 8rem;
+}
+
+.slo-page-subtitle {
+  color: $color-grey-light-4;
+  font-size: 4rem;
+}
+
+.slo-page-helper-text {
+  margin-top: 2rem;
+  color: $color-grey-light-4;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.slo-page-header-content {
+  margin-top: 2rem;
+}
+
+.slo-projects-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slo-container-header {
+  margin-top: 2.0rem;
+  margin-bottom: 1.0rem;
+  height: 2.6rem;
+}
+
+.slo-indiv-project-container {
+  padding: 2rem;
+  margin: 0 5rem;
+  margin-top: 2.5rem;
+}
+
+.slo-add-projects-cta {
+  margin: auto auto;
+  align-content: center;
+  height: 30rem;
+  padding: 3rem 5rem;
+}

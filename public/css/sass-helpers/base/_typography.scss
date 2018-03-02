@@ -1,0 +1,101 @@
+.page-title-text {
+  font-size: 3rem;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark-1;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.hover-underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.page-header-text {
+  color: $color-grey-dark-3;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.section-header {
+  color: $color-grey-dark-3;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.section-content {
+  color: black;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-section-header-color {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.text-color-grey-light-3 {
+  color: $color-grey-light-3;
+}
+
+.text-color-grey-light-1 {
+  color: $color-grey-light-1;
+}
+
+.text-color-primary-light {
+  color: $color-primary-light;
+}
+
+.text-color-grey-dark-1 {
+  color: $color-grey-dark-1;
+}
+
+.text-color-grey-dark-3 {
+  color: $color-grey-dark-3;
+}
+
+.default-font-size {
+  font-size: $default-font-size
+}
+
+.letter-spacing-md {
+  letter-spacing: 0.3rem;
+}
+
+.heading-1 {
+  font-size: 4rem;
+}
+
+.heading-2 {
+  font-size: 3.5rem;
+}
+
+.heading-3 {
+  font-size: 3rem;
+}
+
+.heading-4 {
+  font-size: 2.5rem;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

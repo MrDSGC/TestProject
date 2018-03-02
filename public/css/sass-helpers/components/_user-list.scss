@@ -1,0 +1,15 @@
+.user-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $color-grey-light-4;
+  padding: 0 1.5rem;
+  z-index: 100000;
+}
+
+.user-list-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

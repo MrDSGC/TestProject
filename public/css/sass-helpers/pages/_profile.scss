@@ -1,0 +1,139 @@
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: calc(100% - 30rem);
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.main-container > .project-mini {
+  margin: 0 2rem;
+  margin-bottom: 2rem;
+  @media only screen and (max-width: $bp-medium) {
+    margin: 1rem;
+  }
+}
+
+.side-container {
+  padding: 3rem 1rem;
+  width: 25rem;
+  margin-right: 1rem;
+  position: relative;
+
+  background-color: #ffffff;
+  border-radius: $border-radius-container;
+  border: $border-for-containers;
+
+  display: flex;
+  flex-flow: column;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    margin-right: 0rem;
+    border-radius: 0px;
+  }
+
+  &-top-right {
+    top: 0px;
+    padding-top: 10px;
+  }
+}
+
+.profile-pic {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.profile-username {
+  margin: auto;
+  color: black;
+  font-weight: 700;
+}
+
+.profile-follow-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1rem;
+
+}
+
+.profile-location {
+  text-align: left;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.profile-aboutme {
+  margin: auto;
+  color: $color-primary-dark;
+  font-weight: 300;
+}
+
+.profile-section-links {
+  font-size: $default-font-size;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-section-link-group {
+  margin-left: 1rem;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.profile-section-link-item {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: all .2s;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2.25rem;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    cursor: pointer;
+  }
+
+}
+
+.profile-section-skills {
+  color: black;
+  font-size: $default-font-size;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-section-header {
+  color: $color-grey-dark-3;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.profile-section-skills-tags {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}

@@ -1,0 +1,39 @@
+.container-title {
+  margin: auto;
+  color: black;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-logo-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--image {
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: $border-radius-container;
+  }
+}
+
+.section {
+  font-size: $default-font-size;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+
+  &__header {
+    color: #999;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    margin-top: .5rem;
+    margin-left: 1rem;
+  }
+}

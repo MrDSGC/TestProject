@@ -1,0 +1,119 @@
+/************** Colors ******************/
+$color-primary: #6AAFE6;
+$color-primary-light: #8EC0E4;
+$color-primary-dark: #569BD2;
+
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+$color-grey-light-3: #f0eeee;
+$color-grey-light-4: #E6E8EB;
+
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+
+$shadow-dark: rgba(0, 0, 0, 0.15);
+$box-shadow-params: 0 6px 12px rgba(0,0,0,.175);
+
+/************** Fonts ******************/
+$default-font-size: 1.6rem;
+$font-display: 'Lato', sans-serif;
+
+/************** Borders ******************/
+$border-radius-container: .5rem;
+$border-for-containers: 1px solid rgba(0,0,0,.15);
+
+/************** Responsive Breakpoints ******************/
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; //1rem = 10px // 10 / 16 = 62.5.
+
+	//800px and smaller
+	@media only screen and (max-width: $bp-medium) {
+		font-size: 50%; //1rem = 8px // 8 / 16 = 50.
+	}
+}
+
+body {
+	font-family: $font-display;
+	font-weight: 400;
+	line-height: 2.5;
+	//color: $color-grey-dark-2;
+	background-color: $color-grey-light-4;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover
+{
+     color:#000000;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+//*********** Base ********/
+@import "sass-helpers/base/animation";
+@import "sass-helpers/base/typography";
+@import "sass-helpers/base/utilities";
+
+//*********** Pages ********/
+@import "sass-helpers/pages/home";
+@import "sass-helpers/pages/profile";
+@import "sass-helpers/pages/project";
+@import "sass-helpers/pages/projectCreate";
+@import "sass-helpers/pages/signup";
+@import "sass-helpers/pages/404-page";
+@import "sass-helpers/pages/slo-landing-page";
+@import "sass-helpers/pages/landing_page_generic_style";
+
+//*********** Components ********/
+@import "sass-helpers/components/header";
+@import "sass-helpers/components/button";
+@import "sass-helpers/components/projects_mini_view";
+@import "sass-helpers/components/tag";
+@import "sass-helpers/components/images";
+@import "sass-helpers/components/forms";
+@import "sass-helpers/components/dropdown";
+@import "sass-helpers/components/searchProject";
+@import "sass-helpers/components/links_input_container";
+@import "sass-helpers/components/usernameHome";
+@import "sass-helpers/components/user-list";
+@import "sass-helpers/components/project-list";
+@import "sass-helpers/components/tag-list";
+@import "sass-helpers/components/vote";
+@import "sass-helpers/components/header-banner";
+@import "sass-helpers/components/admin";
+@import "sass-helpers/components/welcome";
+@import "sass-helpers/components/follow_button_section";
+@import "sass-helpers/components/header_search";
+
+
+//*********** Layout ********/
+@import "sass-helpers/layouts/nav";
+@import "sass-helpers/layouts/side-container";
+@import "sass-helpers/layouts/containers";
+@import "sass-helpers/layouts/section_layouts";
+
+//*********** Pages ********/
+//@import "sass-helpers/pages/home";
+//@import "sass-helpers/pages/profile";
+//@import "sass-helpers/pages/project";
