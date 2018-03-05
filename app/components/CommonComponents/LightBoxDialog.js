@@ -19,14 +19,15 @@ const LightBoxDialog = (props) => {
         onRequestClose={ ()=> {props.handleClose()} }
         actions = {actions}
       >
+
         <div className="modal_content_container">
           <img className="modal_image_view" src={props.mediaToRender.mediaURL} />
           <div className="modal_image_description">
             {props.mediaToRender.mediaDescription}
           </div>
         </div>
-        <button onClick={() => {props.handleNext()}} className="lightbox-right-arrow"></button>
-        <button onClick={() => {props.handlePrevious()}} className="lightbox-left-arrow"></button>
+        <img onClick={() => {props.handleNext()}} className="lightbox-right-arrow" src="/assets/img/arrow-147175_1280.png"/>
+        <img onClick={() => {props.handlePrevious()}} className="lightbox-left-arrow" src="/assets/img/arrow-147173_1280.png"/>
       </Dialog>
     </MuiThemeProvider>
     )

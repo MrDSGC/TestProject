@@ -57,7 +57,7 @@ class PhotoRowWithModalPicture extends React.Component {
   };
 
   handleNext () {
-    if(this.state.currentIndex + 1 > 0){
+    if(this.state.currentIndex >= this.state.mediaArray.length - 1){
       this.setState({
         mediaToRender: this.state.mediaArray[0],
         currentIndex: 0
