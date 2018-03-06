@@ -630,6 +630,18 @@ body {
   margin-top: 1rem;
   margin-left: 1rem; }
 
+.modal_content_container {
+  text-align: center; }
+
+.modal_image_view {
+  object-fit: scale-down;
+  object-position: 50% 0;
+  max-height: 90%;
+  max-width: 100%; }
+
+.modal_image_description {
+  text-align: center; }
+
 ul {
   margin-left: 3rem; }
 

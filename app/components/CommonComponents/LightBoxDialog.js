@@ -25,6 +25,7 @@ const LightBoxDialog = (props) => {
           <div className="modal_image_description">
             This is a test caption used for testing purposes only This is a test caption used for testing purposes only This is a test caption used for testing purposes only This is a test caption used for testing purposes only This is a test caption used for testing purposes only This is a test caption used for testing purposes only This is a test caption used for testing purposes only This is a test caption used for testing purposes only This is a test caption used for testing purposes only This is a test caption used for testing purposes only
           </div>
+
         </div>
         <img onClick={() => {props.handleNext()}} className="lightbox-right-arrow" src="/assets/img/arrow-147175_1280.png"/>
         <img onClick={() => {props.handlePrevious()}} className="lightbox-left-arrow" src="/assets/img/arrow-147173_1280.png"/>
