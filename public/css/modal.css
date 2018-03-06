@@ -1,0 +1,57 @@
+.modal_content_container {
+  height: 100%;
+}
+
+.modal_image_view {
+  object-fit: contain;
+  object-position: 50% 0;
+  width: 100%;
+  height:100%;
+}
+
+.modal_image_description {
+  color: white;
+  position: absolute;
+  top: 24px;
+  background-color:rgba(0,0,0,0.2);
+  max-height: 10%;
+  width: calc(100% - 48px);
+  padding: 5px;
+  font-size: 12px;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+.modal_image_description:hover{
+  max-height:100%;
+}
+
+.lightbox-left-arrow {
+  width: 19px;
+  height: 30px;
+  position: absolute;
+  left: 3px;
+  top: 45%;
+  opacity: 0.3;
+}
+
+.lightbox-right-arrow {
+  width: 19px;
+  height: 30px;
+  position: absolute;
+  right:3px;
+  top:45%;
+  opacity: 0.3;
+}
+
+.lightbox-left-arrow:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.lightbox-right-arrow:hover {
+  opacity: 1;
+  cursor: pointer;
+}
