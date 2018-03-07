@@ -27,6 +27,7 @@
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
     "express-validator": "^2.20.4",
+    "filestack-js": "^0.11.2",
     "filestack-react": "*",
     "jsonwebtoken": "^5.7.0",
     "lodash": "^4.17.4",
